@@ -8,7 +8,7 @@ Created: 21-Dec-2018
 
 
 What is a SEP?
-===============
+==============
 
 SEP stands for Space Decentral Enhancement Proposal.  A SEP is a design
 document providing information to the Space Decentral community, or describing
@@ -28,7 +28,7 @@ feature proposal [1]_.
 
 
 SEP Types
-==========
+=========
 
 There are three kinds of SEPs:
 
@@ -56,7 +56,7 @@ There are three kinds of SEPs:
 
 
 SEP Workflow
-=============
+============
 
 
 SEP Editors
@@ -67,7 +67,7 @@ and editorial aspects of the SEP workflow (e.g. assigning SEP numbers and
 changing their status).  See `SEP Editor Responsibilities & Workflow`_ for
 details.  The current editors are:
 
-* ????
+* <vacant>
 
 SEP editorship is by invitation of the current editors, and they can be
 contacted via the address <info@spacedecentral.net>, but you may only need to use this
@@ -76,7 +76,7 @@ conducted via the GitHub `SEP repository`_ issues and pull requests.
 
 
 Start with an idea for Space Decentral
------------------------------
+--------------------------------------
 
 The SEP process begins with a new idea for Space Decentral.  It is highly
 recommended that a single SEP contain a single key proposal or new
@@ -286,7 +286,7 @@ these cases will depend on the nature and purpose of the SEP being updated.
 
 
 What belongs in a successful SEP?
-==================================
+=================================
 
 Each SEP should have the following parts:
 
@@ -353,16 +353,15 @@ Each SEP should have the following parts:
 
 
 SEP Formats and Templates
-==========================
+=========================
 
 SEPs are UTF-8 encoded text files using the reStructuredText_ format.
 ReStructuredText_ allows for rich markup that is still quite easy to
-read, but also results in good-looking and functional HTML. SEP 12
-contains instructions and a template [4]_ for reStructuredText SEPs.
+read, but also results in good-looking and functional HTML.
 
 
 SEP Header Preamble
-====================
+===================
 
 Each SEP must begin with an RFC 822 style header preamble.  The headers
 must appear in the following order.  Headers marked with "*" are
@@ -470,7 +469,7 @@ are no constraints on the names used in files.
 
 
 Reporting SEP Bugs, or Submitting SEP Updates
-===============================================
+=============================================
 
 How you report a bug, or submit a SEP update depends on several
 factors, such as the maturity of the SEP, the preferences of the SEP
@@ -489,7 +488,7 @@ changes.
 
 
 Transferring SEP Ownership
-===========================
+==========================
 
 It occasionally becomes necessary to transfer ownership of SEPs to a
 new champion.  In general, it is preferable to retain the original author as
@@ -513,7 +512,7 @@ will make a unilateral decision - it's not like such decisions can't be reversed
 
 
 SEP Editor Responsibilities & Workflow
-=======================================
+======================================
 
 A SEP editor must watch the `SEP repository`_.  Most correspondence regarding
 SEP administration can be handled through GitHub issues and pull requests, but
@@ -577,15 +576,11 @@ administrative & editorial part (which is generally a low volume task).
 
 
 References and Footnotes
-=========================
+========================
 
 .. [1] This historical record is available by the normal git commands
    for retrieving older revisions, and can also be browsed via HTTP here:
    https://github.com/spacedecentral/seps
-
-.. [5] More details on the SEP rendering and publication process can be found
-   in the SEPs repo README at
-   https://github.com/spacedecentral/seps/blob/master/README.rst
 
 .. _issue tracker:
    http://bugs.spacedecentral.net/
