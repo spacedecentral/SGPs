@@ -1,9 +1,15 @@
 SEP: 1
+
 Title: SEP Purpose and Guidelines
+
 Author: Sean Marquez <sean@space.coop>
+
 Status: Draft
+
 Type: Process
+
 Content-Type: text/x-rst
+
 Created: 21-Dec-2018
 
 
@@ -12,7 +18,7 @@ What is a SEP?
 
 SEP stands for Space Decentral Enhancement Proposal.  A SEP is a design
 document providing information to the Space Decentral community, or describing
-a new feature for the Space Decentral platform or its governance processes.
+a new feature for the `Space Decentral platform`_ or its governance processes.
 The SEP should provide a concise technical specification of the feature and a
 rationale for the feature.
 
@@ -70,8 +76,7 @@ details.  The current editors are:
 * <vacant>
 
 SEP editorship is by invitation of the current editors, and they can be
-contacted via the address <info@spacedecentral.net>, but you may only need to use this
-to contact the editors semi-privately.  All of the SEP workflow can be
+contacted via the `SD Governance`_ riot room.  All of the SEP workflow can be
 conducted via the GitHub `SEP repository`_ issues and pull requests.
 
 
@@ -91,14 +96,12 @@ Each SEP must have a champion -- someone who writes the SEP using the style
 and format described below, shepherds the discussions in the appropriate
 forums, and attempts to build community consensus around the idea.  The SEP
 champion (a.k.a. Author) should first attempt to ascertain whether the idea is
-SEP-able.  Posting to the `SD Goverance riot room` is the best way to go about this.
+SEP-able.  Posting to the `SD Governance` is the best way to go about this.
 
 Vetting an idea publicly before going as far as writing a SEP is meant
-to save the potential author time. Many ideas have been brought
-forward for changing Space Decentral that have been rejected for various
-reasons. Asking the Space Decentral community first if an idea is original
-helps prevent too much time being spent on something that is
-guaranteed to be rejected based on prior discussions (searching
+to save the potential author time. Asking the Space Decentral community first 
+if an idea is original helps prevent too much time being spent on something
+that is guaranteed to be rejected based on prior discussions (searching
 the internet does not always do the trick). It also helps to make sure
 the idea is applicable to the entire community and not just the author.
 Just because an idea sounds good to the author does not
@@ -140,7 +143,6 @@ The standard SEP workflow is:
     editors do not consider whether they seem likely to be accepted.
   * The title accurately describes the content.
   * The SEP's language (spelling, grammar, sentence structure, etc.) 
-    and code style (examples should match PEP 8 & PEP 7) should be
     correct and conformant.  The SEP will be checked for formatting
     (plain text or reStructuredText) by Travis CI, and will not be
     approved until this passes.
@@ -228,8 +230,7 @@ Space Decentral release*.
 Wherever possible, it is considered preferable to reduce the scope of a proposal
 to avoid the need to rely on the "Provisional" status (e.g. by deferring some
 features to later SEPs), as this status can lead to version compatibility
-challenges in the wider Space Decentral ecosystem. SEP 411 provides additional
-details on potential use cases for the Provisional status.
+challenges in the wider Space Decentral ecosystem.
 
 A SEP can also be assigned the status "Deferred".  The SEP author or an
 editor can assign the SEP this SEP when no progress is being made
@@ -290,10 +291,9 @@ What belongs in a successful SEP?
 
 Each SEP should have the following parts:
 
-1. Preamble -- RFC 822 style headers containing meta-data about the
-   SEP, including the SEP number, a short descriptive title (limited
-   to a maximum of 44 characters), the names, and optionally the
-   contact info for each author, etc.
+1. Preamble -- headers containing meta-data about the SEP, including the SEP
+   number, a short descriptive title (limited to a maximum of 44 characters),
+   the names, and optionally the contact info for each author, etc.
 
 2. Abstract -- a short (~200 word) description of the technical issue
    being addressed.
@@ -303,13 +303,10 @@ Each SEP should have the following parts:
    this SEP as an example) or licensed under the `Open Publication License`_.
 
 4. Specification -- The technical specification should describe the
-   syntax and semantics of any new platform feature.  The
-   specification should be detailed enough to allow competing,
-   interoperable implementations for at least the current major Space Decentral
-   platforms (CSpace Decentral, Jython, IronSpace Decentral, PyPy).
+   syntax and semantics of any new platform feature.
 
 5. Motivation -- The motivation is critical for SEPs that want to
-   change the Space Decentral platform.  It should clearly explain why the
+   change the `Space Decentral platform`_.  It should clearly explain why the
    existing specification is inadequate to address the
    problem that the SEP solves.  SEP submissions without sufficient
    motivation may be rejected outright.
@@ -327,9 +324,7 @@ Each SEP should have the following parts:
 7. Backwards Compatibility -- All SEPs that introduce backwards
    incompatibilities must include a section describing these
    incompatibilities and their severity.  The SEP must explain how the
-   author proposes to deal with these incompatibilities.  SEP
-   submissions without a sufficient backwards compatibility treatise
-   may be rejected outright.
+   author proposes to deal with these incompatibilities.
 
 8. Reference Implementation -- The reference implementation must be
    completed before any SEP is given status "Final", but it need not
@@ -363,15 +358,14 @@ read, but also results in good-looking and functional HTML.
 SEP Header Preamble
 ===================
 
-Each SEP must begin with an RFC 822 style header preamble.  The headers
+Each SEP must begin with a header preamble.  The headers
 must appear in the following order.  Headers marked with "*" are
 optional and are described below.  All other headers are required. ::
 
     SEP: <sep number>
     Title: <sep title>
-    Author: <list of authors' real names and optionally, email addrs>
-  * BDFL-Delegate: <SEP czar's real name>
-  * Discussions-To: <email address>
+    Author: <list of authors' real names and optionally, email or riot id>
+  * Discussions-To: <riot room>
     Status: <Draft | Active | Accepted | Provisional | Deferred | Rejected |
              Withdrawn | Final | Superseded>
     Type: <Standards Track | Informational | Process>
@@ -379,18 +373,18 @@ optional and are described below.  All other headers are required. ::
   * Requires: <sep numbers>
     Created: <date created on, in dd-mmm-yyyy format>
   * Space Decentral-Version: <version number>
-    Post-History: <dates of postings to Space Decentral-ideas and/or Space Decentral-dev>
+    Post-History: <dates of postings to SD-Governance>
   * Replaces: <sep number>
   * Superseded-By: <sep number>
   * Resolution: <url>
 
-The Author header lists the names, and optionally the email addresses
+The Author header lists the names, and optionally the riot room
 of all the authors/owners of the SEP.  The format of the Author header
 value must be
 
-    Random J. User <address@dom.ain>
+    Random J. User #spacedecentral-governance:matrix.org
 
-if the email address is included, and just
+if the riot room is included, and just
 
     Random J. User
 
@@ -399,41 +393,28 @@ if the address is not given.  For historical reasons the format
 SEPs must use the mandated format above, and it is acceptable to
 change to this format when SEPs are updated.
 
-If there are multiple authors, each should be on a separate line
-following RFC 2822 continuation line conventions.  Note that personal
-email addresses in SEPs will be obscured as a defense against spam
-harvesters.
-
-The BDFL-Delegate field is used to record cases where the final decision to
-approve or reject a SEP rests with someone other than the BDFL. (The
-delegate's email address is currently omitted due to a limitation in the
-email address masking for reStructuredText SEPs)
+If there are multiple authors, each should be on a separate line.
 
 *Note: The Resolution header is required for Standards Track SEPs
-only.  It contains a URL that should point to an email message or
+only.  It contains a URL that should point to a riot message or
 other web resource where the pronouncement about the SEP is made.*
 
 For a SEP where final pronouncement will be made on a list other than
-Space Decentral-dev, a Discussions-To header will indicate the mailing list
+`SD Governance`_, a Discussions-To header will indicate the riot room
 or URL where the pronouncement will occur. A temporary Discussions-To header
 may also be used when a draft SEP is being discussed prior to submission for
 pronouncement. No Discussions-To header is necessary if the SEP is being
-discussed privately with the author, or on the Space Decentral-list, Space Decentral-ideas
-or Space Decentral-dev mailing lists.  Note that email addresses in the
-Discussions-To header will not be obscured.
+discussed privately with the author.
 
 The Type header specifies the type of SEP: Standards Track,
 Informational, or Process.
 
 The format of a SEP is specified with a Content-Type header.  The
 acceptable values are "text/x-rst" for reStructuredText SEPs (see PEP 12 [2]_).
-reStructuredText is strongly preferred, but for backwards
-compatibility plain text is currently still the default if no
-Content-Type header is present.
 
 The Created header records the date that the SEP was assigned a
 number, while Post-History is used to record the dates of when new
-versions of the SEP are posted to Space Decentral-ideas and/or Space Decentral-dev.  Both
+versions of the SEP are posted to `SD Governance`_.  Both
 headers should be in dd-mmm-yyyy format, e.g. 14-Aug-2001.
 
 Standards Track SEPs will typically have a Space Decentral-Version header which
@@ -495,17 +476,16 @@ a co-author of the transferred SEP, but that's really up to the
 original author.  A good reason to transfer ownership is because the
 original author no longer has the time or interest in updating it or
 following through with the SEP process, or has fallen off the face of
-the 'net (i.e. is unreachable or not responding to email).  A bad
-reason to transfer ownership is because the author doesn't agree with the
-direction of the SEP.  One aim of the SEP process is to try to build
-consensus around a SEP, but if that's not possible, an author can always
-submit a competing SEP.
+the 'net (i.e. is unreachable).  A bad reason to transfer ownership is because
+the author doesn't agree with the direction of the SEP.  One aim of the SEP
+process is to try to build consensus around a SEP, but if that's not possible,
+an author can always submit a competing SEP.
 
 If you are interested in assuming ownership of a SEP, you can also do this via
 pull request.  Fork the `SEP repository`_, make your ownership modification,
 and submit a pull request.  You should also send a message asking to take
 over, addressed to both the original author and the SEP editors.  If the
-original author doesn't respond to email in a timely manner, the SEP editors
+original author doesn't respond to messages in a timely manner, the SEP editors
 will make a unilateral decision - it's not like such decisions can't be reversed
 :).
 
@@ -515,7 +495,7 @@ SEP Editor Responsibilities & Workflow
 
 A SEP editor must watch the `SEP repository`_.  Most correspondence regarding
 SEP administration can be handled through GitHub issues and pull requests, but
-you may also use the `SD Goverance riot room` for SEP related discussions.
+you may also use the `SD Governance` for SEP related discussions.
 
 For each new SEP that comes in, an editor does the following:
 
@@ -538,17 +518,12 @@ Once the SEP is ready for the repository, a SEP editor will:
 
 * Assign a SEP number (almost always just the next available number,
   but sometimes it's a special/joke number, like 666 or 3141).
-  (Clarification: For Space Decentral 3, numbers in the 3000s were used for
-  Py3k-specific proposals.  But now that all new features go into
-  Space Decentral 3 only, the process is back to using numbers in the 100s again.
-  Remember that numbers below 100 are meta-SEPs.)
 
 * Check that the author has correctly labeled the SEP's type
   ("Standards Track", "Informational", or "Process"), and marked its
   status as "Draft".
 
-* Add the SEP to a local fork of the `SEP repository`_.  For workflow
-  instructions, follow `The Space Decentral Developers Guide <http://docs.spacedecentral.net/devguide>`_
+* Add the SEP to a local fork of the `SEP repository`_.
 
   The git repo for the seps is::
 
@@ -556,14 +531,9 @@ Once the SEP is ready for the repository, a SEP editor will:
 
 * Commit and push the new (or updated) SEP
 
-* Monitor spacedecentral.net to make sure the SEP gets added to the site
-  properly. If it fails to appear, running ``make`` will build all of the
-  current SEPs. If any of these are triggering errors, they must be
-  corrected before any SEP will update on the site.
-
 
 Updates to existing SEPs should be submitted as a `GitHub pull request`_.
-Questions may of course still be sent to <info@spacedecentral.net>.
+Questions may of course still be sent to `SD Governance`_.
 
 Many SEPs are written and maintained by developers with write access
 to the Space Decentral codebase.  The SEP editors monitor the Space Decentral-checkins
@@ -584,6 +554,9 @@ References and Footnotes
 .. [2] PEP 12, Sample reStructuredText PEP Template, Goodger, Warsaw
    (http://www.python.org/dev/peps/pep-0012)
 
+.. _Space Decentral platform:
+   https://github.com/spacedecentral/spacedecentral-network/
+
 .. _Space Decentral Network - issues:
    https://github.com/spacedecentral/spacedecentral-network/issues
 
@@ -597,7 +570,7 @@ References and Footnotes
 
 .. _SEP repository: https://github.com/spacedecentral/seps
 
-.. _SD Governance riot room: https://riot.im/app/#/room/#spacedecentral-governance:matrix.org
+.. _SD Governance: https://riot.im/app/#/room/#spacedecentral-governance:matrix.org
 
 .. _`GitHub pull request`: https://github.com/spacedecentral/seps/pulls
 
