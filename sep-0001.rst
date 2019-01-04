@@ -1,15 +1,9 @@
 SEP: 1
-
 Title: SEP Purpose and Guidelines
-
 Author: Sean Marquez <sean@space.coop>
-
 Status: Draft
-
 Type: Process
-
 Content-Type: text/x-rst
-
 Created: 21-Dec-2018
 
 
