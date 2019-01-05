@@ -70,8 +70,9 @@ details.  The current editors are:
 * <vacant>
 
 SEP editorship is by invitation of the current editors, and they can be
-contacted via the `SD Governance`_ riot room.  All of the SEP workflow can be
-conducted via the GitHub `SEP repository`_ issues and pull requests.
+contacted via the `SD Development`_ or `SD Governance`_ riot room.  All of the 
+SEP workflow can be conducted via the GitHub `SEP repository`_ issues and pull
+requests.
 
 
 Start with an idea for Space Decentral
@@ -81,9 +82,9 @@ The SEP process begins with a new idea for Space Decentral.  It is highly
 recommended that a single SEP contain a single key proposal or new
 idea. Small enhancements or patches often don't need
 a SEP and can be injected into the Space Decentral development workflow with a
-patch submission to the Space Decentral `Space Decentral Network - Issues`_. The more focused the
-SEP, the more successful it tends to be.  The SEP editors reserve the
-right to reject SEP proposals if they appear too unfocused or too
+patch submission to the Space Decentral `Space Decentral Network - Issues`_. 
+The more focused the SEP, the more successful it tends to be.  The SEP editors
+reserve the right to reject SEP proposals if they appear too unfocused or too
 broad.  If in doubt, split your SEP into several well-focused ones.
 
 Each SEP must have a champion -- someone who writes the SEP using the style
@@ -103,18 +104,18 @@ mean it will work for most people in most areas where Space Decentral is used.
 
 Once the champion has asked the Space Decentral community as to whether an
 idea has any chance of acceptance, a draft SEP should be presented to
-Space Decentral-ideas.  This gives the author a chance to flesh out the draft
-SEP to make properly formatted, of high quality, and to address
+`SD Development`_ or `SD Governance`_.  This gives the author a chance to flesh
+out the draft SEP to make properly formatted, of high quality, and to address
 initial concerns about the proposal.
 
 
 Submitting a SEP
 ----------------
 
-Following a discussion on Space Decentral-ideas, the proposal should be submitted as a
-draft SEP via a `GitHub pull request`_.  The draft must be written in SEP
-style as described below, else it will fail review immediately (although minor
-errors may be corrected by the editors).
+Following a discussion on `SD Development`_ or `SD Governance`_, the proposal
+should be submitted as a draft SEP via a `GitHub pull request`_.  The draft
+must be written in SEP style as described below, else it will fail review
+immediately (although minor errors may be corrected by the editors).
 
 The standard SEP workflow is:
 
@@ -174,9 +175,9 @@ As updates are necessary, the SEP author can check in new versions if they
 (or a collaborating developer) have git push privileges.
 
 After a SEP number has been assigned, a draft SEP may be discussed further on
-Space Decentral-ideas (getting a SEP number assigned early can be useful for ease of
-reference, especially when multiple draft SEPs are being considered at the
-same time).
+`SD Development`_ or `SD Governance`_ (getting a SEP number assigned early can
+be useful for ease of reference, especially when multiple draft SEPs are being
+considered at the same time).
 
 Standards Track SEPs consist of two parts, a design document and a
 reference implementation.  It is generally recommended that at least a
@@ -254,9 +255,9 @@ While not shown in the diagram, "Accepted" SEPs may technically move to
 the implementation process reveals fundamental flaws in the design that were
 not noticed prior to acceptance of the SEP. Unlike Provisional SEPs, these
 transitions are only permitted if the accepted proposal has *not* been included
-in a Space Decentral release - released changes must instead go through the regular
-deprecation process (which may require a new SEP providing the rationale for
-the deprecation).
+in a Space Decentral release - released changes must instead go through the
+regular deprecation process (which may require a new SEP providing the rationale
+for the deprecation).
 
 Some Informational and Process SEPs may also have a SEP of "Active"
 if they are never meant to be completed.  E.g. SEP 1 (this SEP).
@@ -394,7 +395,7 @@ only.  It contains a URL that should point to a riot message or
 other web resource where the pronouncement about the SEP is made.*
 
 For a SEP where final pronouncement will be made on a list other than
-`SD Governance`_, a Discussions-To header will indicate the riot room
+`SD Development`_ or `SD Governance`_, a Discussions-To header will indicate the riot room
 or URL where the pronouncement will occur. A temporary Discussions-To header
 may also be used when a draft SEP is being discussed prior to submission for
 pronouncement. No Discussions-To header is necessary if the SEP is being
@@ -408,7 +409,7 @@ acceptable values are "text/x-rst" for reStructuredText SEPs (see PEP 12 [2]_).
 
 The Created header records the date that the SEP was assigned a
 number, while Post-History is used to record the dates of when new
-versions of the SEP are posted to `SD Governance`_.  Both
+versions of the SEP are posted to `SD Development`_ or `SD Governance`_.  Both
 headers should be in dd-mmm-yyyy format, e.g. 14-Aug-2001.
 
 Standards Track SEPs will typically have a Space Decentral-Version header which
@@ -450,8 +451,8 @@ factors, such as the maturity of the SEP, the preferences of the SEP
 author, and the nature of your comments.  For the early draft stages
 of the SEP, it's probably best to send your comments and changes
 directly to the SEP author.  For more mature, or finished SEPs you may
-want to submit corrections as a `GitHub issue`_ or `GitHub pull request`_ so that
-your changes don't get lost.
+want to submit corrections as a `GitHub issue`_ or `GitHub pull request`_ so
+that your changes don't get lost.
 
 When in doubt about where to send your changes, please check first
 with the SEP author and/or a SEP editor.
@@ -527,12 +528,10 @@ Once the SEP is ready for the repository, a SEP editor will:
 
 
 Updates to existing SEPs should be submitted as a `GitHub pull request`_.
-Questions may of course still be sent to `SD Governance`_.
+Questions may of course still be sent to `SD Development`_ or `SD Governance`_.
 
 Many SEPs are written and maintained by developers with write access
-to the Space Decentral codebase.  The SEP editors monitor the Space Decentral-checkins
-list for SEP changes, and correct any structure, grammar, spelling, or
-markup mistakes they see.
+to the Space Decentral codebase.
 
 SEP editors don't pass judgment on SEPs.  They merely do the
 administrative & editorial part (which is generally a low volume task).
@@ -563,6 +562,8 @@ References and Footnotes
 .. _Space Decentral GitHub: https://github.com/spacedecentral/
 
 .. _SEP repository: https://github.com/spacedecentral/seps
+
+.. _SD Development: https://riot.im/app/#/room/#spacedecentral-dev:matrix.org
 
 .. _SD Governance: https://riot.im/app/#/room/#spacedecentral-governance:matrix.org
 
